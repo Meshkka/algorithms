@@ -1,7 +1,7 @@
 #include <iostream>
 
 void print_dynamic_array(int* arr, int logical_size, int actual_size) {
-    std::cout << "Äèíàìè÷åñêèé ìàññèâ: ";
+    std::cout << "Ð”Ð¸Ð½Ð°Ð¼Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
     for (int i = 0; i < actual_size; ++i) {
         if (i < logical_size) {
             std::cout << arr[i];
@@ -48,22 +48,22 @@ int main() {
 
     int actual_size, logical_size;
 
-    std::cout << "Ââåäèòå ôàêòè÷åñêèé ðàçìåð ìàññèâà: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
     std::cin >> actual_size;
 
     do {
-        std::cout << "Ââåäèòå ëîãè÷åñêèé ðàçìåð ìàññèâà: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
         std::cin >> logical_size;
 
         if (logical_size > actual_size) {
-            std::cout << "Îøèáêà! Ëîãè÷åñêèé ðàçìåð ìàññèâà íå ìîæåò ïðåâûøàòü ôàêòè÷åñêèé!" << std::endl;
+            std::cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð›Ð¾Ð³Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°Ñ‚ÑŒ Ñ„Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹!" << std::endl;
         }
     } while (logical_size > actual_size);
 
     int* arr = new int[actual_size];
 
     for (int i = 0; i < logical_size; ++i) {
-        std::cout << "Ââåäèòå arr[" << i << "]: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ arr[" << i << "]: ";
         std::cin >> arr[i];
     }
 
@@ -71,7 +71,7 @@ int main() {
 
     int new_element;
     while (true) {
-        std::cout << "Ââåäèòå ýëåìåíò äëÿ äîáàâëåíèÿ: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð´Ð»Ñ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ: ";
         std::cin >> new_element;
 
         if (new_element == 0) {
@@ -83,7 +83,7 @@ int main() {
         print_dynamic_array(arr, logical_size, actual_size);
     }
 
-    std::cout << "Ñïàñèáî! Âàø ìàññèâ: ";
+    std::cout << "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾! Ð’Ð°Ñˆ Ð¼Ð°ÑÑÐ¸Ð²: ";
     print_dynamic_array(arr, logical_size, actual_size);
 
     delete[] arr;
