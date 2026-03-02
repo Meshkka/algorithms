@@ -3,7 +3,7 @@
 #include <cmath>
 
 void print_pyramid(int* arr, int size) {
-    std::cout << "Ïèğàìèäà:" << std::endl;
+    std::cout << "ĞŸĞ¸Ñ€Ğ°Ğ¼Ğ¸Ğ´Ğ°:" << std::endl;
 
     for (int i = 0; i < size; ++i) {
         int level = 0;
@@ -87,11 +87,11 @@ void travel_pyramid(int* arr, int size) {
     std::string command;
 
     while (true) {
-        std::cout << "Âû íàõîäèòåñü çäåñü: ";
+        std::cout << "Ğ’Ñ‹ Ğ½Ğ°Ñ…Ğ¾Ğ´Ğ¸Ñ‚ĞµÑÑŒ Ğ·Ğ´ĞµÑÑŒ: ";
         print_current_position(arr, current_index);
         std::cout << std::endl;
 
-        std::cout << "Ââåäèòå êîìàíäó: ";
+        std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ¼Ğ°Ğ½Ğ´Ñƒ: ";
         std::cin >> command;
 
         if (command == "exit") {
@@ -100,32 +100,32 @@ void travel_pyramid(int* arr, int size) {
         else if (command == "up") {
             if (has_parent(current_index)) {
                 current_index = get_parent_index(current_index);
-                std::cout << "Îê" << std::endl;
+                std::cout << "ĞĞº" << std::endl;
             }
             else {
-                std::cout << "Îøèáêà! Îòñóòñòâóåò ğîäèòåëü" << std::endl;
+                std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ°! ĞÑ‚ÑÑƒÑ‚ÑÑ‚Ğ²ÑƒĞµÑ‚ Ñ€Ğ¾Ğ´Ğ¸Ñ‚ĞµĞ»ÑŒ" << std::endl;
             }
         }
         else if (command == "left") {
             if (has_left_child(current_index, size)) {
                 current_index = get_left_child_index(current_index);
-                std::cout << "Îê" << std::endl;
+                std::cout << "ĞĞº" << std::endl;
             }
             else {
-                std::cout << "Îøèáêà! Îòñóòñòâóåò ëåâûé ïîòîìîê" << std::endl;
+                std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ°! ĞÑ‚ÑÑƒÑ‚ÑÑ‚Ğ²ÑƒĞµÑ‚ Ğ»ĞµĞ²Ñ‹Ğ¹ Ğ¿Ğ¾Ñ‚Ğ¾Ğ¼Ğ¾Ğº" << std::endl;
             }
         }
         else if (command == "right") {
             if (has_right_child(current_index, size)) {
                 current_index = get_right_child_index(current_index);
-                std::cout << "Îê" << std::endl;
+                std::cout << "ĞĞº" << std::endl;
             }
             else {
-                std::cout << "Îøèáêà! Îòñóòñòâóåò ïğàâûé ïîòîìîê" << std::endl;
+                std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ°! ĞÑ‚ÑÑƒÑ‚ÑÑ‚Ğ²ÑƒĞµÑ‚ Ğ¿Ñ€Ğ°Ğ²Ñ‹Ğ¹ Ğ¿Ğ¾Ñ‚Ğ¾Ğ¼Ğ¾Ğº" << std::endl;
             }
         }
         else {
-            std::cout << "Íåèçâåñòíàÿ êîìàíäà! Äîñòóïíûå êîìàíäû: up, left, right, exit" << std::endl;
+            std::cout << "ĞĞµĞ¸Ğ·Ğ²ĞµÑÑ‚Ğ½Ğ°Ñ ĞºĞ¾Ğ¼Ğ°Ğ½Ğ´Ğ°! Ğ”Ğ¾ÑÑ‚ÑƒĞ¿Ğ½Ñ‹Ğµ ĞºĞ¾Ğ¼Ğ°Ğ½Ğ´Ñ‹: up, left, right, exit" << std::endl;
         }
     }
 }
@@ -136,7 +136,7 @@ int main() {
     int arr1[] = { 1, 3, 6, 5, 9, 8 };
     int size1 = sizeof(arr1) / sizeof(arr1[0]);
 
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğ¹ Ğ¼Ğ°ÑÑĞ¸Ğ²: ";
     for (int i = 0; i < size1; ++i) {
         std::cout << arr1[i];
         if (i < size1 - 1) {
@@ -152,7 +152,7 @@ int main() {
     int arr2[] = { 94, 67, 18, 44, 55, 12, 6, 42 };
     int size2 = sizeof(arr2) / sizeof(arr2[0]);
 
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğ¹ Ğ¼Ğ°ÑÑĞ¸Ğ²: ";
     for (int i = 0; i < size2; ++i) {
         std::cout << arr2[i];
         if (i < size2 - 1) {
@@ -168,7 +168,7 @@ int main() {
     int arr3[] = { 16, 11, 9, 10, 5, 6, 8, 1, 2, 4 };
     int size3 = sizeof(arr3) / sizeof(arr3[0]);
 
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ğ˜ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğ¹ Ğ¼Ğ°ÑÑĞ¸Ğ²: ";
     for (int i = 0; i < size3; ++i) {
         std::cout << arr3[i];
         if (i < size3 - 1) {
