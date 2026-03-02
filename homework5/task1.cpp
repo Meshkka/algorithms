@@ -1,7 +1,7 @@
 #include <iostream>
 
 void print_pyramid(int* arr, int size) {
-    std::cout << "Ïèðàìèäà:" << std::endl;
+    std::cout << "ÐŸÐ¸Ñ€Ð°Ð¼Ð¸Ð´Ð°:" << std::endl;
 
     for (int i = 0; i < size; ++i) {
         int level = 0;
@@ -37,7 +37,7 @@ int main() {
     int arr1[] = { 1, 3, 6, 5, 9, 8 };
     int size1 = sizeof(arr1) / sizeof(arr1[0]);
 
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
     for (int i = 0; i < size1; ++i) {
         std::cout << arr1[i];
         if (i < size1 - 1) {
@@ -52,7 +52,7 @@ int main() {
     int arr2[] = { 94, 67, 18, 44, 55, 12, 6, 42 };
     int size2 = sizeof(arr2) / sizeof(arr2[0]);
 
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
     for (int i = 0; i < size2; ++i) {
         std::cout << arr2[i];
         if (i < size2 - 1) {
@@ -67,7 +67,7 @@ int main() {
     int arr3[] = { 16, 11, 9, 10, 5, 6, 8, 1, 2, 4 };
     int size3 = sizeof(arr3) / sizeof(arr3[0]);
 
-    std::cout << "Èñõîäíûé ìàññèâ: ";
+    std::cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
     for (int i = 0; i < size3; ++i) {
         std::cout << arr3[i];
         if (i < size3 - 1) {
