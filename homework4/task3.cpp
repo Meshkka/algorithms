@@ -2,7 +2,7 @@
 #include <string>
 
 void print_dynamic_array(int* arr, int logical_size, int actual_size) {
-    std::cout << "ƒËÌ‡ÏË˜ÂÒÍËÈ Ï‡ÒÒË‚: ";
+    std::cout << "–î–∏–Ω–∞–º–∏—á–µ—Å–∫–∏–π –º–∞—Å—Å–∏–≤: ";
     for (int i = 0; i < actual_size; ++i) {
         if (i < logical_size) {
             std::cout << arr[i];
@@ -20,7 +20,7 @@ void print_dynamic_array(int* arr, int logical_size, int actual_size) {
 
 int* remove_dynamic_array_head(int* arr, int& logical_size, int& actual_size) {
     if (logical_size <= 0) {
-        std::cout << "ÕÂ‚ÓÁÏÓÊÌÓ Û‰‡ÎËÚ¸ ÔÂ‚˚È ˝ÎÂÏÂÌÚ, Ú‡Í Í‡Í Ï‡ÒÒË‚ ÔÛÒÚÓÈ. ƒÓ Ò‚Ë‰‡ÌËˇ!" << std::endl;
+        std::cout << "–ù–µ–≤–æ–∑–º–æ–∂–Ω–æ —É–¥–∞–ª–∏—Ç—å –ø–µ—Ä–≤—ã–π —ç–ª–µ–º–µ–Ω—Ç, —Ç–∞–∫ –∫–∞–∫ –º–∞—Å—Å–∏–≤ –ø—É—Å—Ç–æ–π. –î–æ —Å–≤–∏–¥–∞–Ω–∏—è!" << std::endl;
         return arr;
     }
 
@@ -61,22 +61,22 @@ int main() {
 
     int actual_size, logical_size;
 
-    std::cout << "¬‚Â‰ËÚÂ Ù‡ÍÚË˜ÂÒÍËÈ ‡ÁÏÂ Ï‡ÒÒË‚‡: ";
+    std::cout << "–í–≤–µ–¥–∏—Ç–µ —Ñ–∞–∫—Ç–∏—á–µ—Å–∫–∏–π —Ä–∞–∑–º–µ—Ä –º–∞—Å—Å–∏–≤–∞: ";
     std::cin >> actual_size;
 
     do {
-        std::cout << "¬‚Â‰ËÚÂ ÎÓ„Ë˜ÂÒÍËÈ ‡ÁÏÂ Ï‡ÒÒË‚‡: ";
+        std::cout << "–í–≤–µ–¥–∏—Ç–µ –ª–æ–≥–∏—á–µ—Å–∫–∏–π —Ä–∞–∑–º–µ—Ä –º–∞—Å—Å–∏–≤–∞: ";
         std::cin >> logical_size;
 
         if (logical_size > actual_size) {
-            std::cout << "Œ¯Ë·Í‡! ÀÓ„Ë˜ÂÒÍËÈ ‡ÁÏÂ Ï‡ÒÒË‚‡ ÌÂ ÏÓÊÂÚ ÔÂ‚˚¯‡Ú¸ Ù‡ÍÚË˜ÂÒÍËÈ!" << std::endl;
+            std::cout << "–û—à–∏–±–∫–∞! –õ–æ–≥–∏—á–µ—Å–∫–∏–π —Ä–∞–∑–º–µ—Ä –º–∞—Å—Å–∏–≤–∞ –Ω–µ –º–æ–∂–µ—Ç –ø—Ä–µ–≤—ã—à–∞—Ç—å —Ñ–∞–∫—Ç–∏—á–µ—Å–∫–∏–π!" << std::endl;
         }
     } while (logical_size > actual_size);
 
     int* arr = new int[actual_size];
 
     for (int i = 0; i < logical_size; ++i) {
-        std::cout << "¬‚Â‰ËÚÂ arr[" << i << "]: ";
+        std::cout << "–í–≤–µ–¥–∏—Ç–µ arr[" << i << "]: ";
         std::cin >> arr[i];
     }
 
@@ -85,20 +85,20 @@ int main() {
     std::string answer;
     while (true) {
         if (logical_size <= 0) {
-            std::cout << "ÕÂ‚ÓÁÏÓÊÌÓ Û‰‡ÎËÚ¸ ÔÂ‚˚È ˝ÎÂÏÂÌÚ, Ú‡Í Í‡Í Ï‡ÒÒË‚ ÔÛÒÚÓÈ. ƒÓ Ò‚Ë‰‡ÌËˇ!" << std::endl;
+            std::cout << "–ù–µ–≤–æ–∑–º–æ–∂–Ω–æ —É–¥–∞–ª–∏—Ç—å –ø–µ—Ä–≤—ã–π —ç–ª–µ–º–µ–Ω—Ç, —Ç–∞–∫ –∫–∞–∫ –º–∞—Å—Å–∏–≤ –ø—É—Å—Ç–æ–π. –î–æ —Å–≤–∏–¥–∞–Ω–∏—è!" << std::endl;
             break;
         }
 
-        std::cout << "”‰‡ÎËÚ¸ ÔÂ‚˚È ˝ÎÂÏÂÌÚ? ";
+        std::cout << "–£–¥–∞–ª–∏—Ç—å –ø–µ—Ä–≤—ã–π —ç–ª–µ–º–µ–Ω—Ç? ";
         std::cin >> answer;
 
-        if (answer == "‰‡" || answer == "yes" || answer == "y" || answer == "‰") {
+        if (answer == "–¥–∞" || answer == "yes" || answer == "y" || answer == "–¥") {
             arr = remove_dynamic_array_head(arr, logical_size, actual_size);
 
             print_dynamic_array(arr, logical_size, actual_size);
         }
         else {
-            std::cout << "—Ô‡ÒË·Ó! ¬‡¯ ‰ËÌ‡ÏË˜ÂÒÍËÈ Ï‡ÒÒË‚: ";
+            std::cout << "–°–ø–∞—Å–∏–±–æ! –í–∞—à –¥–∏–Ω–∞–º–∏—á–µ—Å–∫–∏–π –º–∞—Å—Å–∏–≤: ";
             print_dynamic_array(arr, logical_size, actual_size);
             break;
         }
